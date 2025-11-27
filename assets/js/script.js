@@ -67,8 +67,9 @@ select.addEventListener("click", function () { elementToggleFunc(this); });
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
+    let selectedValue = this.dataset.category || this.innerText.toLowerCase().split(" ")[0];
+    let displayText = this.innerText.split(" ")[0]; // Remove count from display
+    selectValue.innerText = displayText;
     elementToggleFunc(select);
     filterFunc(selectedValue);
 
@@ -77,6 +78,45 @@ for (let i = 0; i < selectItems.length; i++) {
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
+
+// Function to count projects by category
+const countProjectsByCategory = function () {
+  const categories = {
+    "all": filterItems.length,
+    "automations": 0,
+    "data intelligence": 0,
+    "workflows": 0
+  };
+
+  filterItems.forEach(item => {
+    const category = item.dataset.category;
+    if (category) {
+      categories[category] = (categories[category] || 0) + 1;
+    }
+  });
+
+  // Update filter button counts
+  document.querySelectorAll("[data-count]").forEach(element => {
+    const category = element.dataset.count;
+    if (categories[category] !== undefined) {
+      element.textContent = categories[category];
+    }
+  });
+
+  // Update select dropdown counts
+  document.querySelectorAll(".select-item .filter-count").forEach((element, index) => {
+    const button = element.closest("button");
+    if (button) {
+      const category = button.dataset.category || (index === 0 ? "all" : "");
+      if (category && categories[category] !== undefined) {
+        element.textContent = categories[category];
+      }
+    }
+  });
+};
+
+// Initialize counts on page load
+countProjectsByCategory();
 
 const filterFunc = function (selectedValue) {
 
@@ -101,8 +141,9 @@ for (let i = 0; i < filterBtn.length; i++) {
 
   filterBtn[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
+    let selectedValue = this.dataset.category || this.innerText.toLowerCase().split(" ")[0];
+    let displayText = this.innerText.split(" ")[0]; // Remove count from display
+    selectValue.innerText = displayText;
     filterFunc(selectedValue);
 
     lastClickedBtn.classList.remove("active");
@@ -119,6 +160,12 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const formMessage = document.querySelector("[data-form-message]");
+
+// Initialize EmailJS
+(function() {
+  emailjs.init("OVxz-pguQZaJQ9xUQ");
+})();
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
@@ -131,8 +178,89 @@ for (let i = 0; i < formInputs.length; i++) {
       formBtn.setAttribute("disabled", "");
     }
 
+    // Clear message when user types
+    if (formMessage) {
+      formMessage.textContent = "";
+      formMessage.classList.remove("success", "error");
+    }
+
   });
 }
+
+// Form submission handler
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // Disable button and show loading state
+  formBtn.setAttribute("disabled", "");
+  formBtn.innerHTML = '<ion-icon name="hourglass-outline"></ion-icon><span>Sending...</span>';
+
+  // Clear previous messages
+  if (formMessage) {
+    formMessage.textContent = "";
+    formMessage.classList.remove("success", "error");
+  }
+
+  // Get form data
+  const formData = {
+    from_name: form.querySelector('input[name="fullname"]').value.trim(),
+    from_email: form.querySelector('input[name="email"]').value.trim(),
+    message: form.querySelector('textarea[name="message"]').value.trim()
+  };
+
+  // Validate form data
+  if (!formData.from_name || !formData.from_email || !formData.message) {
+    if (formMessage) {
+      formMessage.textContent = "Please fill in all fields.";
+      formMessage.classList.add("error");
+    }
+    formBtn.removeAttribute("disabled");
+    formBtn.innerHTML = '<ion-icon name="paper-plane"></ion-icon><span>Send Message</span>';
+    return;
+  }
+
+  // Send email using EmailJS
+  emailjs.send("service_jax7zzk", "template_fbjm501", formData)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      // Success
+      if (formMessage) {
+        formMessage.textContent = "Message sent successfully! I'll get back to you soon.";
+        formMessage.classList.add("success");
+      }
+
+      // Reset form
+      form.reset();
+      formBtn.setAttribute("disabled", "");
+      formBtn.innerHTML = '<ion-icon name="paper-plane"></ion-icon><span>Send Message</span>';
+
+      // Clear message after 5 seconds
+      setTimeout(() => {
+        if (formMessage) {
+          formMessage.textContent = "";
+          formMessage.classList.remove("success");
+        }
+      }, 5000);
+    }, function(error) {
+      console.error('FAILED...', error);
+      // Error - show more specific message
+      let errorMessage = "Failed to send message. ";
+      if (error.text) {
+        errorMessage += error.text;
+      } else {
+        errorMessage += "Please check your connection or use WhatsApp/Email buttons above.";
+      }
+      
+      if (formMessage) {
+        formMessage.textContent = errorMessage;
+        formMessage.classList.add("error");
+      }
+
+      // Re-enable button
+      formBtn.removeAttribute("disabled");
+      formBtn.innerHTML = '<ion-icon name="paper-plane"></ion-icon><span>Send Message</span>';
+    });
+});
 
 
 
