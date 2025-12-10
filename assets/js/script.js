@@ -164,7 +164,12 @@ const formMessage = document.querySelector("[data-form-message]");
 
 // Initialize EmailJS
 (function() {
-  emailjs.init("OVxz-pguQZaJQ9xUQ");
+  // Safely initialize EmailJS so the rest of the script still runs offline
+  if (typeof emailjs !== "undefined") {
+    emailjs.init("OVxz-pguQZaJQ9xUQ");
+  } else {
+    console.warn("EmailJS SDK not loaded; contact form will be disabled.");
+  }
 })();
 
 // add event to all form input field
@@ -219,7 +224,17 @@ form.addEventListener("submit", function(e) {
     return;
   }
 
-  // Send email using EmailJS
+  // Send email using EmailJS (skip gracefully if SDK failed to load)
+  if (typeof emailjs === "undefined") {
+    if (formMessage) {
+      formMessage.textContent = "Message service unavailable. Please use WhatsApp or Email above.";
+      formMessage.classList.add("error");
+    }
+    formBtn.removeAttribute("disabled");
+    formBtn.innerHTML = '<ion-icon name="paper-plane"></ion-icon><span>Send Message</span>';
+    return;
+  }
+
   emailjs.send("service_jax7zzk", "template_fbjm501", formData)
     .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
