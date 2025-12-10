@@ -5,6 +5,16 @@
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
+// Enable lazy loading for images/iframes that don't opt out
+const enableLazyLoading = () => {
+  document.querySelectorAll("img:not([loading])").forEach((img) => {
+    img.setAttribute("loading", "lazy");
+  });
+  document.querySelectorAll("iframe[data-mapbox]:not([loading])").forEach((frame) => {
+    frame.setAttribute("loading", "lazy");
+  });
+};
+
 
 
 // sidebar variables
@@ -300,3 +310,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Kick off lazy loading tweaks after DOM is ready
+window.addEventListener("DOMContentLoaded", enableLazyLoading);
