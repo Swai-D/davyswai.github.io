@@ -96,11 +96,13 @@ def my_expertise():
 
 <div align="center">
 
-![Davy's GitHub stats](https://github-readme-stats.vercel.app/api?username=Swai-D&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF&cache_seconds=1800)
+![Davy's GitHub stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Swai-D&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Swai-D&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&cache_seconds=1800)
+![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Swai-D&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Swai-D&theme=radical&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&cache_seconds=1800)
+![GitHub Streak](https://streak-stats.demolab.com/?user=Swai-D&theme=radical&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF)
+
+[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Swai-D&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=1)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
@@ -110,19 +112,68 @@ def my_expertise():
 
 ---
 
-## 🐍 Contribution Snake
+## 📈 Contribution Activity
 
 <div align="center">
 
-![Snake animation](https://raw.githubusercontent.com/Swai-D/Swai-D/output/github-contribution-grid-snake.svg)
+[![Davy's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Swai-D&custom_title=Davy's%20Contribution%20Graph&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF&area_color=00D9FF&area=true&hide_border=true)](https://github.com/Swai-D)
 
 </div>
 
-## 📈 Contribution Graph
+---
+
+## 🐍 GitHub Contribution Snake
 
 <div align="center">
 
-[![Davy's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Swai-D&theme=react-dark&hide_border=true&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF)](https://github.com/Swai-D)
+![snake gif](https://raw.githubusercontent.com/Swai-D/Swai-D/output/github-contribution-grid-snake-dark.svg)
+
+<!-- If snake doesn't show yet, uncomment this text animation instead:
+<img src="https://raw.githubusercontent.com/Swai-D/Swai-D/main/.github/assets/snake-animation.svg" alt="snake animation" />
+-->
+
+**⚠️ Snake animation will appear after setting up GitHub Actions workflow**
+
+<details>
+<summary>🔧 Click here for Snake Setup Instructions</summary>
+
+### Setup GitHub Action for Snake:
+
+1. Create file: `.github/workflows/snake.yml`
+2. Add this code:
+
+```yaml
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: Swai-D
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+3. Enable Actions: Settings → Actions → General → "Read and write permissions"
+4. Run manually: Actions tab → "Generate Snake" → "Run workflow"
+
+</details>
 
 </div>
 
