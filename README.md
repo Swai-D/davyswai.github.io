@@ -111,11 +111,16 @@ def my_expertise():
 
 </div>
 
-
-
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Swai-D&theme=tokyonight" alt="GitHub Trophies"/>
+  <!-- GitHub Readme Stats -->
+  <img src="https://github-readme-stats.vercel.app/api?username=Swai-D&show_icons=true&theme=tokyonight&count_private=true" alt="Davy's GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Swai-D&layout=compact&theme=tokyonight" alt="Top languages" />
+  <br />
+  <!-- Snake game badge linking to the playable page -->
+  [![snake game](https://raw.githubusercontent.com/Swai-D/davyswai.github.io/main/assets/images/snake-badge.svg)](https://swai-d.github.io/davyswai.github.io/snake/)
 </div>
+
+---
 
 ## 🎯 What I'm Currently Building
 
