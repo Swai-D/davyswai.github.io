@@ -111,11 +111,11 @@ def my_expertise():
 
 </div>
 
+
+
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Swai-D&theme=tokyonight" alt="GitHub Trophies"/>
 </div>
-
----
 
 ## 🎯 What I'm Currently Building
 
