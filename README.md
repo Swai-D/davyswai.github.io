@@ -6,6 +6,8 @@
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=AI+Developer+%7C+Tanzania+%F0%9F%87%B9%F0%9F%87%BF;Automation+Engineer;n8n+Workflow+Specialist;Turning+Ideas+into+AI+Systems" alt="Typing SVG" />
 
+[![Profile Views](https://komarev.com/ghpvc/?username=Swai-D&color=00D9FF&style=flat-square)](https://github.com/Swai-D)
+
 </div>
 
 ---
@@ -90,15 +92,32 @@ def my_expertise():
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Activity
 
 <div align="center">
 
-![Davy's GitHub stats](https://github-readme-stats.vercel.app/api?username=Swai-D&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF)
+<a href="https://github.com/Swai-D">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Swai-D&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Swai-D&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
+</a>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Swai-D&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF)
+</div>
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Swai-D&theme=radical&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF)
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Swai-D&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</div>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Swai-D&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies"/>
+</div>
+
+---
+
+## 📈 Contribution Graph
+
+<div align="center">
+
+[![Davy's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Swai-D&theme=tokyo-night&hide_border=true)](https://github.com/Swai-D)
 
 </div>
 
@@ -147,17 +166,7 @@ def my_expertise():
 
 <div align="center">
 
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-
-![Snake animation](https://github.com/Swai-D/Swai-D/blob/output/github-contribution-grid-snake.svg)
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
 </div>
 
@@ -169,10 +178,14 @@ def my_expertise():
 
 **💼 Available for freelance AI & automation projects**
 
-[![Profile Views](https://komarev.com/ghpvc/?username=Swai-D&color=00D9FF&style=for-the-badge)](https://github.com/Swai-D)
-
 </div>
 
 ---
 
+<div align="center">
+
 ⭐️ **From Tanzania 🇹🇿 with Innovation** | Built with 💙 and AI
+
+**Last Updated:** January 2026
+
+</div>
