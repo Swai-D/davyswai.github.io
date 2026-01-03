@@ -92,17 +92,22 @@ def my_expertise():
 
 ---
 
-## 📊 GitHub Stats
+## 💻 Technical Toolkit
 
 <div align="center">
 
-![Davy's GitHub stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Swai-D&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF)
+### Core Technologies I Work With Daily
 
-![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Swai-D&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF)
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=Swai-D&theme=radical&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF)
-
-[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Swai-D&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=1)](https://github.com/ryo-ma/github-profile-trophy)
+| **Category** | **Tools & Technologies** |
+|:---:|:---|
+| 🤖 **AI & Automation** | n8n • Python • OpenAI API • LangChain • RAG Systems |
+| 💬 **Chatbot Development** | Dialogflow • Rasa • Custom AI Agents • Voice Integration |
+| 🔗 **Integration & APIs** | REST APIs • Webhooks • OAuth • GraphQL • WebSockets |
+| 🗄️ **Databases** | PostgreSQL • MongoDB • Supabase • Vector Databases |
+| ☁️ **Cloud & Deployment** | Vercel • Railway • Render • Docker • GitHub Actions |
+| 🌐 **Web Development** | HTML/CSS • JavaScript • React • Node.js • Tailwind |
+| 📊 **Data & Analytics** | Pandas • Web Scraping • Data Pipelines • Visualization |
+| 🛠️ **Dev Tools** | Git • VS Code • Postman • Notion • Airtable |
 
 </div>
 
@@ -112,80 +117,57 @@ def my_expertise():
 
 ---
 
-## 📈 Contribution Activity
+## 🎯 What I'm Currently Building
 
-<div align="center">
+<table>
+<tr>
+<td width="50%">
 
-[![Davy's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Swai-D&custom_title=Davy's%20Contribution%20Graph&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF&area_color=00D9FF&area=true&hide_border=true)](https://github.com/Swai-D)
+### 🚀 Active Projects
 
-</div>
+- 🤖 **AI Automation Workflows**  
+  Building n8n systems for SMEs in East Africa
+  
+- 📺 **YouTube Channel Launch**  
+  "n8n kwa Kiswahili" - Coming January 2026
+  
+- 📝 **Tech Blog**  
+  "AI kwa Kiswahili" - Making AI accessible
+  
+- 💼 **Client Solutions**  
+  Custom chatbots & automation systems
 
----
+</td>
+<td width="50%">
 
-## 🐍 GitHub Contribution Snake
+### 📚 Current Learning
 
-<div align="center">
-
-![snake gif](https://raw.githubusercontent.com/Swai-D/Swai-D/output/github-contribution-grid-snake-dark.svg)
-
-<!-- If snake doesn't show yet, uncomment this text animation instead:
-<img src="https://raw.githubusercontent.com/Swai-D/Swai-D/main/.github/assets/snake-animation.svg" alt="snake animation" />
--->
-
-**⚠️ Snake animation will appear after setting up GitHub Actions workflow**
-
-<details>
-<summary>🔧 Click here for Snake Setup Instructions</summary>
-
-### Setup GitHub Action for Snake:
-
-1. Create file: `.github/workflows/snake.yml`
-2. Add this code:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: Swai-D
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-3. Enable Actions: Settings → Actions → General → "Read and write permissions"
-4. Run manually: Actions tab → "Generate Snake" → "Run workflow"
-
-</details>
-
-</div>
-
----
-
-## 🎓 Current Learning Journey
-
-- 🔥 Advanced RAG architectures & vector databases
-- 🧠 AI agent orchestration with LangChain
-- 🎨 Creative AI applications (image, video, audio)
+- 🔥 Advanced RAG architectures
+- 🧠 Multi-agent AI systems  
+- 🎨 AI-powered creative tools
 - 📱 Mobile automation with Python
-- 🌐 Building AI-powered web applications
+- 🌐 Full-stack AI applications
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🏆 Impact & Achievements
+
+<div align="center">
+
+| 🎯 Metric | 📈 Achievement |
+|:---|:---|
+| **🤝 Clients Served** | 15+ businesses automated |
+| **⚡ Workflows Built** | 50+ n8n automation systems |
+| **💬 Chatbots Deployed** | 10+ AI assistants in production |
+| **⏱️ Time Saved** | 1,000+ hours of manual work eliminated |
+| **💰 ROI Generated** | Average 300% improvement in efficiency |
+| **🌍 Markets** | Tanzania, Kenya, Uganda |
+
+</div>
 
 ---
 
