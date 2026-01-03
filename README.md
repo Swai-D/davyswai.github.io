@@ -92,19 +92,16 @@ def my_expertise():
 
 ---
 
-## 📊 GitHub Activity
+## 📊 GitHub Stats
 
 <div align="center">
 
-<a href="https://github.com/Swai-D">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Swai-D&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Swai-D&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
-</a>
+![Davy's GitHub stats](https://github-readme-stats.vercel.app/api?username=Swai-D&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF&cache_seconds=1800)
 
-</div>
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Swai-D&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&cache_seconds=1800)
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Swai-D&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Swai-D&theme=radical&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&cache_seconds=1800)
+
 </div>
 
 <div align="center">
@@ -113,11 +110,19 @@ def my_expertise():
 
 ---
 
+## 🐍 Contribution Snake
+
+<div align="center">
+
+![Snake animation](https://raw.githubusercontent.com/Swai-D/Swai-D/output/github-contribution-grid-snake.svg)
+
+</div>
+
 ## 📈 Contribution Graph
 
 <div align="center">
 
-[![Davy's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Swai-D&theme=tokyo-night&hide_border=true)](https://github.com/Swai-D)
+[![Davy's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Swai-D&theme=react-dark&hide_border=true&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF)](https://github.com/Swai-D)
 
 </div>
 
